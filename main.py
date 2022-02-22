@@ -32,9 +32,10 @@ def getImage(num):
 def save(num):
     pilImage.save('file{}.jpg'.format(num))
 
-    
+
 #user input to number of shred
 no_shred = 2
+no_shred = input("No of file shreding. Power of 2")
 
 def no_shred(no):
     no = input("Number of file shreds")
@@ -45,8 +46,3 @@ def no_shred(no):
 M = numpydata.shape[0]//no_shred
 N = numpydata.shape[1]//no_shred
 tiles = [numpydata[x:x+M,y:y+N] for x in range(0,numpydata.shape[0],M) for y in range(0,numpydata.shape[1],N)]
-
-
-
-
-

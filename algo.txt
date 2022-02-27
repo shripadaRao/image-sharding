@@ -1,0 +1,40 @@
+algo for sharding for other no also
+1. identify no of users
+2. if users==power of 2
+    then normal method
+3. else
+    find the difference b/w the users and the power of 2 lower than it.
+    take a random piece and divide so that every user gets a piece.
+
+puesdocode
+    def highestPowerof2(n):
+        res = 0;
+        for i in range(n, 0, -1):
+            # If i is a power of 2
+            if ((i & (i - 1)) == 0):
+            
+                res = i;
+                break;
+            
+        return res;
+
+    def no_missing_user():
+        return(users - highestPowerof2)
+    
+    def select_random_user():
+        //randomly select_random_user
+        
+    def further_image_shard():
+        //shard select_random_user by 2.
+
+    def passing_it():
+        //pass the sharded images to the missing_user.
+
+    def assigning_piece_to_user():
+        //assigning_piece_to_user.
+
+>example for 1,2,3:
+no of users = 5
+(skip step 2)
+power_of_2_less_than(5) is 4.
+so here, one user is missing a piece. i'th user gives half of their piece to the missing_user.

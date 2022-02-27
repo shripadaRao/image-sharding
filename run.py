@@ -12,6 +12,7 @@ numpydata = asarray(img)
 #user input to number of shred
 
 no_tiles = int(input("No of sharding:"))
+#implement sharding to other nos also not just power of 2.
 
 
 M = numpydata.shape[0]//no_tiles
